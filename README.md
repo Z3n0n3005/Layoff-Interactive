@@ -17,3 +17,11 @@ node index.js
 cd ./client
 npm start
 ```
+
+## Reference links
+- [Map D3 example implementation](https://d3-graph-gallery.com/graph/choropleth_basic.html)  
+- [Using React with D3](https://wattenberger.com/blog/react-and-d3)  
+- [How to query params in GET and POST in JavaScript](https://webtips.dev/solutions/send-query-params-in-get-and-post-in-javascript)  
+- [Sequelize basics](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/)
+- [How to use Sequelize with NodeJs and MySSQL](https://www.digitalocean.com/community/tutorials/how-to-use-sequelize-with-node-js-and-mysql)
+- [How to create a React frontend and a Node/Express backend and connect them](https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/)
