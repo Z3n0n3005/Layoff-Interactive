@@ -14,8 +14,12 @@ cd ./api
 node index.js
 
 //new terminal
-cd ./client
+cd ../client
 npm start
+
+//kill port
+netstat -aon | findstr :<port>
+taskkill /PID <PID> /F
 ```
 
 ## Reference links
