@@ -1,5 +1,7 @@
-const dataController = require('./data.controller')
+const companyDataController = require('./companyData.controller')
+const industryDataController = require('./industryData.controller')
 
 module.exports = (app) => {
-    dataController(app);
+    companyDataController(app);
+    industryDataController(app);
 }
