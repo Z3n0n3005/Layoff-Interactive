@@ -3,6 +3,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 
+const JM = require('json-mapper');
+const fs = require('fs');
+
 
 app.use(bodyParser.json({limit: '5000mb'}))
 app.use(bodyParser.urlencoded({ limit: '5000mb', extended: true }));
@@ -23,18 +26,40 @@ const initDb = async () => {
     // console.log(db)
     await db.sequelize.sync({ force: true })
 
-    var newData = generateData()
-    // console.log(newData)
+    let rawdata = fs.readFileSync('../data/company_json.json');
+    let input = JSON.parse(rawdata);
+    // var input = generateData()
+    console.log(input);
 
-    await newData.map((item) => {
-        db.data.create({
-            x: item[0],
-            y: item[1]
-        })
-    })
+    // await input.map((item) => {
+    //     console.log(item);
+        // db.companyData.create({
+        //     Year: item["Year"],
+        //     Quarter: item["Quarter"],
+        //     Company: item["Company"],
+        //     NumberOfLayOff: item["NumberOfLayOff"]
+        // })
+    // })
+
+    for(let item of input){
+        console.log(item);
+      
+        db.companyData.sync({force: true}).then(function () {
+            // Table created
+            return db.companyData.create({
+                Year: item["Year"],
+                Quarter: item["Quarter"],
+                Company: item["Company"],
+                NumberOfLayOff: item["NumberOfLayOff"]
+            })
+        });
+    
+    }
 }
 
 initDb();
+console.log(db.companyData);
+
 // Call controller
 const controller = require('./controller/index');
 controller(app);

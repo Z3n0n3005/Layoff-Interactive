@@ -24,7 +24,9 @@ const sequelize = new Sequelize(
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
-db.data = require('./model/data.model')(sequelize, Sequelize)
+// db.data = require('./model/data.model')(sequelize, Sequelize)
+db.companyData = require('./model/company.model')(sequelize, Sequelize)
+db.industryData = require('./model/industry.model')(sequelize, Sequelize)
 // console.log(db)
 
 

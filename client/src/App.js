@@ -18,7 +18,7 @@ function App() {
   return(
     <>
       <h1>Hello</h1>
-      <svg>
+      {/* <svg>
         {
           data.map((item) => {
             return <circle
@@ -28,7 +28,7 @@ function App() {
             />
           })
         }
-      </svg>
+      </svg> */}
     </>
   )
 }
