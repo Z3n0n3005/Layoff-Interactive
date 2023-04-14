@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState("")
 
   useEffect(() => {
-    fetch('http://localhost:8080/data/getAll')
+    fetch('http://localhost:8080/companyData/getAll')
     .then(res => res.json())
     .then(res => {
       console.log(res)
@@ -18,7 +18,7 @@ function App() {
   return(
     <>
       <h1>Hello</h1>
-      <svg>
+      {/* <svg>
         {
           data.map((item) => {
             return <circle
@@ -28,7 +28,7 @@ function App() {
             />
           })
         }
-      </svg>
+      </svg> */}
     </>
   )
 }
