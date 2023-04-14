@@ -1,5 +1,5 @@
-const dataDomain = require("./IndustryData/index")
+const industryDomain = require("./industryData/index")
 
 module.exports = (app) => {
-    app.get('/data/getAll', dataDomain.getAll)
+    app.get('/industryData/getAll', industryDomain.getAll)
 }

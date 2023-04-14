@@ -1,7 +1,7 @@
-const { data } = require("../../db");
+const { companyData } = require("../../db");
 
 const getAll = async (req, res) => {
-    const allData = await data.findAll();
+    const allData = await companyData.findAll();
     return res.json(allData)
 }
 

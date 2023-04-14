@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState("")
 
   useEffect(() => {
-    fetch('http://localhost:8080/data/getAll')
+    fetch('http://localhost:8080/companyData/getAll')
     .then(res => res.json())
     .then(res => {
       console.log(res)

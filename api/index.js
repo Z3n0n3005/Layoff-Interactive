@@ -26,39 +26,45 @@ const initDb = async () => {
     // console.log(db)
     await db.sequelize.sync({ force: true })
 
-    let rawdata = fs.readFileSync('../data/company_json.json');
-    let input = JSON.parse(rawdata);
-    // var input = generateData()
+    let rawdataCompany = fs.readFileSync('../data/company_json.json');
+    let input = JSON.parse(rawdataCompany);
     console.log(input);
 
-    // await input.map((item) => {
-    //     console.log(item);
-        // db.companyData.create({
-        //     Year: item["Year"],
-        //     Quarter: item["Quarter"],
-        //     Company: item["Company"],
-        //     NumberOfLayOff: item["NumberOfLayOff"]
-        // })
-    // })
+    await db.companyData.sync({ force: true });
 
     for(let item of input){
         console.log(item);
       
-        db.companyData.sync({force: true}).then(function () {
-            // Table created
-            return db.companyData.create({
+        await db.companyData.create({
                 Year: item["Year"],
                 Quarter: item["Quarter"],
                 Company: item["Company"],
                 NumberOfLayOff: item["NumberOfLayOff"]
             })
-        });
+        
+    
+    }
+
+    let rawdataIndustry = fs.readFileSync('../data/industry_json.json');
+    input = JSON.parse(rawdataIndustry);
+    console.log(input);
+
+    await db.industryData.sync({ force: true });
+
+    for(let item of input){
+        console.log(item);
+      
+        await db.industryData.create({
+                Year: item["Year"],
+                Quarter: item["Quarter"],
+                NumberOfLayOff: item["NumberOfLayOff"]
+            })
+        
     
     }
 }
 
 initDb();
-console.log(db.companyData);
 
 // Call controller
 const controller = require('./controller/index');
