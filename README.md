@@ -21,6 +21,15 @@ npm start
 netstat -aon | findstr :<port>
 taskkill /PID <PID> /F
 ```
+## To get data
+- Fetch all industry  
+```
+localhost:8080/industryData/getAll
+```
+- Fetch all company
+```
+localhost:8080/companyData/getAll
+```
 
 ## Reference links
 - [Map D3 example implementation](https://d3-graph-gallery.com/graph/choropleth_basic.html)  
