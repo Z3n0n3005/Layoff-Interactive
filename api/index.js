@@ -23,17 +23,30 @@ const generateData = () => {
 const db = require('./db/index')
 
 const initDb = async () => {
+    
+
     // console.log(db)
     await db.sequelize.sync({ force: true })
 
+    await db.data.sync({ force: true });
+
+    let tempArr = generateData();
+
+    for(let data of tempArr){
+        await db.data.create({
+            x: data[0],
+            y: data[1]
+        })
+    }
+
     let rawdataCompany = fs.readFileSync('../data/company_json.json');
     let input = JSON.parse(rawdataCompany);
-    console.log(input);
+    // console.log(input);
 
     await db.companyData.sync({ force: true });
 
     for(let item of input){
-        console.log(item);
+        // console.log(item);
       
         await db.companyData.create({
                 Year: item["Year"],
@@ -47,12 +60,12 @@ const initDb = async () => {
 
     let rawdataIndustry = fs.readFileSync('../data/industry_json.json');
     input = JSON.parse(rawdataIndustry);
-    console.log(input);
+    // console.log(input);
 
     await db.industryData.sync({ force: true });
 
     for(let item of input){
-        console.log(item);
+        // console.log(item);
       
         await db.industryData.create({
                 Year: item["Year"],
