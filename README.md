@@ -5,7 +5,7 @@ Just for reference
 ```
 cd client
 npm install
-cd ./api
+cd ../api
 npm install
 docker compose up
 
@@ -14,7 +14,7 @@ cd ./api
 node index.js
 
 //new terminal
-cd ../client
+cd ./client
 npm start
 
 //kill port

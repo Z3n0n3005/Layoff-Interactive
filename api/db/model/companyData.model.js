@@ -1,10 +1,6 @@
 module.exports = (sequelize, Sequelize) => {
     const data = sequelize.define("companyData", {
-        Year:{
-            type: Sequelize.INTEGER,
-            allowNull: false
-        },
-        Quarter: {
+        Time: {
             type: Sequelize.STRING(255),
             allowNull: false
         },
