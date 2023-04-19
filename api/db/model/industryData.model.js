@@ -1,10 +1,10 @@
 module.exports = (sequelize, Sequelize) => {
     const data = sequelize.define("industryData", {
-        Year:{
-            type: Sequelize.INTEGER,
+        Time: {
+            type: Sequelize.STRING(255),
             allowNull: false
         },
-        Quarter: {
+        Industry: {
             type: Sequelize.STRING(255),
             allowNull: false
         },

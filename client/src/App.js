@@ -42,11 +42,11 @@ function App() {
     <>
       <h1>Hello</h1>
       
-      <p>CompanyData: {companyData[0].Year} {companyData[0].Quarter} {companyData[0].Company} {companyData[0].NumberOfLayOff}</p>
+      <p>CompanyData: {companyData[0].Time} {companyData[0].Company} {companyData[0].NumberOfLayOff}</p>
       
       <p>RandomData: {data[0].x} {data[0].y}</p>
 
-      <p>InformationIndustryData: {industryData[0].Year} {industryData[0].Quarter} {industryData[0].NumberOfLayOff}</p>
+      <p>InformationIndustryData: {industryData[0].Time} {industryData[0].Industry} {industryData[0].NumberOfLayOff}</p>
 
       {/* Can use this to test stuffs out */}
       {/* <svg>

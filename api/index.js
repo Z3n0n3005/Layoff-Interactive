@@ -39,7 +39,7 @@ const initDb = async () => {
         })
     }
 
-    let rawdataCompany = fs.readFileSync('../data/company_json.json');
+    let rawdataCompany = fs.readFileSync('../data/company.json');
     let input = JSON.parse(rawdataCompany);
     // console.log(input);
 
@@ -49,8 +49,7 @@ const initDb = async () => {
         // console.log(item);
       
         await db.companyData.create({
-                Year: item["Year"],
-                Quarter: item["Quarter"],
+                Time: item["Time"],
                 Company: item["Company"],
                 NumberOfLayOff: item["NumberOfLayOff"]
             })
@@ -58,7 +57,7 @@ const initDb = async () => {
     
     }
 
-    let rawdataIndustry = fs.readFileSync('../data/industry_json.json');
+    let rawdataIndustry = fs.readFileSync('../data/industry.json');
     input = JSON.parse(rawdataIndustry);
     // console.log(input);
 
@@ -68,8 +67,8 @@ const initDb = async () => {
         // console.log(item);
       
         await db.industryData.create({
-                Year: item["Year"],
-                Quarter: item["Quarter"],
+                Time: item["Time"],
+                Industry: item["Industry"],
                 NumberOfLayOff: item["NumberOfLayOff"]
             })
         
