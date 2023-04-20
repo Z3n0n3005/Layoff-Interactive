@@ -5,7 +5,7 @@ Just for reference
 ```
 cd client
 npm install
-cd ./api
+cd ../api
 npm install
 docker compose up
 
@@ -14,12 +14,21 @@ cd ./api
 node index.js
 
 //new terminal
-cd ../client
+cd ./client
 npm start
 
 //kill port
 netstat -aon | findstr :<port>
 taskkill /PID <PID> /F
+```
+## To get data
+- Fetch all industry  
+```
+localhost:8080/industryData/getAll
+```
+- Fetch all company
+```
+localhost:8080/companyData/getAll
 ```
 
 ## Reference links
