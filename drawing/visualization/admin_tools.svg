@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="346.81589mm"
+   height="209.02072mm"
+   viewBox="0 0 346.81588 209.02073"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="admin_tools.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.67615741"
+     inkscape:cx="760.91749"
+     inkscape:cy="445.16262"
+     inkscape:window-width="1918"
+     inkscape:window-height="932"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="155.14198"
+       y="217.50024"
+       width="260.11138"
+       height="87.415955"
+       id="rect3162" />
+    <rect
+       x="167.57724"
+       y="150.6618"
+       width="233.39609"
+       height="59.793307"
+       id="rect1761" />
+    <rect
+       x="167.57724"
+       y="150.6618"
+       width="233.39609"
+       height="59.793308"
+       id="rect1761-9" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.908628,-18.470788)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,25.908628,18.470788)"
+       id="text1759"
+       style="font-size:42.6667px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';white-space:pre;shape-inside:url(#rect1761);fill:#4d4d4d"><tspan
+         x="167.57812"
+         y="188.43355"
+         id="tspan3591">Export files</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,26.574863,79.460773)"
+       id="text1759-1"
+       style="font-size:42.6667px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';white-space:pre;shape-inside:url(#rect1761-9);display:inline;fill:#4d4d4d"><tspan
+         x="167.57812"
+         y="188.43355"
+         id="tspan3593">Import files</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#4d4d4d;stroke-width:0.264583"
+       x="71.868546"
+       y="81.978264"
+       id="text1817"><tspan
+         sodipodi:role="line"
+         id="tspan1815"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="71.868546"
+         y="81.978264">Industry layoff data: </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#4d4d4d;stroke-width:0.264583"
+       x="71.555847"
+       y="95.764099"
+       id="text1821"><tspan
+         sodipodi:role="line"
+         id="tspan1819"
+         style="stroke-width:0.264583"
+         x="71.555847"
+         y="95.764099">Company layoff data</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#4d4d4d;stroke-width:0.264583"
+       x="71.307343"
+       y="143.3532"
+       id="text1817-2"><tspan
+         sodipodi:role="line"
+         id="tspan1815-7"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         x="71.307343"
+         y="143.3532">Industry layoff data: </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#4d4d4d;stroke-width:0.264583"
+       x="70.994644"
+       y="157.13902"
+       id="text1821-0"><tspan
+         sodipodi:role="line"
+         id="tspan1819-9"
+         style="stroke-width:0.264583"
+         x="70.994644"
+         y="157.13902">Company layoff data</tspan></text>
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect1875"
+       width="44.590374"
+       height="9.9094772"
+       x="141.72554"
+       y="75.607338"
+       ry="0" />
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.378654"
+       id="rect1875-3"
+       width="97.74588"
+       height="9.2588139"
+       x="142.25549"
+       y="136.22874"
+       ry="0" />
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.378654"
+       id="rect1875-3-6"
+       width="97.74588"
+       height="9.2588139"
+       x="142.17009"
+       y="150.89784"
+       ry="0" />
+    <rect
+       style="fill:#b3b3b3;stroke-width:0.264583"
+       id="rect1875-6"
+       width="44.590374"
+       height="9.9094772"
+       x="141.83253"
+       y="89.396996"
+       ry="0" />
+    <rect
+       style="fill:#ececec;stroke-width:0.264583"
+       id="rect1875-6-5"
+       width="44.590374"
+       height="9.9094772"
+       x="141.90323"
+       y="99.310677"
+       ry="0" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;stroke-width:0.264583"
+       id="path2443"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="632.82404"
+       sodipodi:cy="209.86295"
+       sodipodi:r1="15.208276"
+       sodipodi:r2="7.6041379"
+       sodipodi:arg1="1.5571207"
+       sodipodi:arg2="2.6043182"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 633.03201,225.0698 -13.48148,-22.63017 26.33904,-0.36022 z"
+       transform="matrix(0.26458333,0,0,0.26458333,14.811481,24.206225)"
+       inkscape:transform-center-x="0.027515697"
+       inkscape:transform-center-y="0.98204185" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#000000;stroke-width:0.264583"
+       x="144.49333"
+       y="83.89122"
+       id="text2526"><tspan
+         sodipodi:role="line"
+         id="tspan2524"
+         style="stroke-width:0.264583"
+         x="144.49333"
+         y="83.89122">JSON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#000000;stroke-width:0.264583"
+       x="144.76656"
+       y="97.202827"
+       id="text2580"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="144.76656"
+         y="97.202827"
+         id="tspan2582">JSON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#000000;stroke-width:0.264583"
+       x="145.10857"
+       y="107.53953"
+       id="text2779"><tspan
+         sodipodi:role="line"
+         id="tspan2777"
+         style="stroke-width:0.264583"
+         x="145.10857"
+         y="107.53953">Excel</tspan></text>
+    <ellipse
+       style="fill:#b3ff80;stroke-width:0.264583"
+       id="path2833"
+       cx="201.72369"
+       cy="80.904274"
+       rx="5.586978"
+       ry="5.5330968" />
+    <rect
+       style="fill:#000000;stroke-width:0.264583"
+       id="rect2887"
+       width="6.1981997"
+       height="2.5446248"
+       x="178.89984"
+       y="93.010445" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;stroke-width:0.264583"
+       id="path2443-3"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="632.82404"
+       sodipodi:cy="209.86295"
+       sodipodi:r1="15.208276"
+       sodipodi:r2="7.6041379"
+       sodipodi:arg1="1.5571207"
+       sodipodi:arg2="2.6043182"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 633.03201,225.0698 -13.48148,-22.63017 26.33904,-0.36022 z"
+       transform="matrix(0.20533168,0,0,0.19184796,71.884178,41.648494)"
+       inkscape:transform-center-x="0.021358184"
+       inkscape:transform-center-y="0.71207139" />
+    <rect
+       style="fill:#1a1a1a;stroke-width:0.264583"
+       id="rect2941"
+       width="2.3164911"
+       height="4.866848"
+       x="200.68677"
+       y="77.03804"
+       ry="1.1582456" />
+    <ellipse
+       style="fill:#b3ff80;stroke-width:0.264583"
+       id="path2833-5"
+       cx="201.69485"
+       cy="94.180542"
+       rx="5.586978"
+       ry="5.5330968" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;stroke-width:0.264583"
+       id="path2443-3-6"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="632.82404"
+       sodipodi:cy="209.86295"
+       sodipodi:r1="15.208276"
+       sodipodi:r2="7.6041379"
+       sodipodi:arg1="1.5571207"
+       sodipodi:arg2="2.6043182"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 633.03201,225.0698 -13.48148,-22.63017 26.33904,-0.36022 z"
+       transform="matrix(0.20533168,0,0,0.19184796,71.85533,54.924757)"
+       inkscape:transform-center-x="0.021358184"
+       inkscape:transform-center-y="0.71207139" />
+    <rect
+       style="fill:#1a1a1a;stroke-width:0.264583"
+       id="rect2941-2"
+       width="2.3164911"
+       height="4.866848"
+       x="200.65793"
+       y="90.314308"
+       ry="1.1582456" />
+    <ellipse
+       style="fill:#b3ff80;stroke-width:0.188324"
+       id="path2833-5-2"
+       cx="234.63869"
+       cy="-140.90678"
+       rx="3.9766748"
+       ry="3.9383235"
+       transform="scale(1,-1)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;stroke-width:0.264583"
+       id="path2443-3-6-6"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="632.82404"
+       sodipodi:cy="209.86295"
+       sodipodi:r1="15.208276"
+       sodipodi:r2="7.6041379"
+       sodipodi:arg1="1.5571207"
+       sodipodi:arg2="2.6043182"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 633.03201,225.0698 -13.48148,-22.63017 26.33904,-0.36022 z"
+       transform="matrix(0.14615009,0,0,-0.13655271,142.22208,168.84809)"
+       inkscape:transform-center-x="0.015203027"
+       inkscape:transform-center-y="-0.50683988" />
+    <rect
+       style="fill:#1a1a1a;stroke-width:0.188324"
+       id="rect2941-2-1"
+       width="1.6488219"
+       height="3.4641039"
+       x="233.90063"
+       y="-143.65868"
+       ry="0.82441097"
+       transform="scale(1,-1)" />
+    <ellipse
+       style="fill:#b3ff80;stroke-width:0.188324"
+       id="path2833-5-2-8"
+       cx="234.68124"
+       cy="-155.3273"
+       rx="3.9766748"
+       ry="3.9383235"
+       transform="scale(1,-1)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;stroke-width:0.264583"
+       id="path2443-3-6-6-7"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="632.82404"
+       sodipodi:cy="209.86295"
+       sodipodi:r1="15.208276"
+       sodipodi:r2="7.6041379"
+       sodipodi:arg1="1.5571207"
+       sodipodi:arg2="2.6043182"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 633.03201,225.0698 -13.48148,-22.63017 26.33904,-0.36022 z"
+       transform="matrix(0.14615009,0,0,-0.13655271,142.26464,183.2686)"
+       inkscape:transform-center-x="0.015203027"
+       inkscape:transform-center-y="-0.50683988" />
+    <rect
+       style="fill:#1a1a1a;stroke-width:0.188324"
+       id="rect2941-2-1-9"
+       width="1.6488219"
+       height="3.4641039"
+       x="233.94319"
+       y="-158.07919"
+       ry="0.82441097"
+       transform="scale(1,-1)" />
+    <rect
+       style="fill:#1a1a1a;stroke-width:0.264583"
+       id="rect3012"
+       width="250.99063"
+       height="0.36104479"
+       x="67.103111"
+       y="117.44297"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,25.908628,18.470788)"
+       id="text3160"
+       style="fill:#1a1a1a;-inkscape-font-specification:'Atkinson Hyperlegible';font-family:'Atkinson Hyperlegible';font-size:26.66666667px;white-space:pre;shape-inside:url(#rect3162)" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#1a1a1a;stroke-width:0.264583"
+       x="144.75815"
+       y="143.95567"
+       id="text3407"><tspan
+         sodipodi:role="line"
+         id="tspan3405"
+         style="stroke-width:0.264583"
+         x="144.75815"
+         y="143.95567">file_name.json</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#1a1a1a;stroke-width:0.264583"
+       x="145.13875"
+       y="158.54016"
+       id="text3411"><tspan
+         sodipodi:role="line"
+         id="tspan3409"
+         style="stroke-width:0.264583"
+         x="145.13875"
+         y="158.54016">file_name.json</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#1a1a1a;stroke-width:0.264583"
+       x="191.82855"
+       y="133.70686"
+       id="text3480"><tspan
+         sodipodi:role="line"
+         id="tspan3478"
+         style="stroke-width:0.264583"
+         x="191.82855"
+         y="133.70686" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';white-space:pre;inline-size:68.7817;fill:#1a1a1a;stroke-width:0.264583"
+       x="243.06343"
+       y="144.48073"
+       id="text3484"
+       transform="translate(0.52657948,-2.2568784)"><tspan
+         x="243.06343"
+         y="144.48073"
+         id="tspan3595">*The green button will </tspan><tspan
+         x="243.06343"
+         y="153.30017"
+         id="tspan3597">prompt the user to </tspan><tspan
+         x="243.06343"
+         y="162.11962"
+         id="tspan3599">choose the file</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';fill:#1a1a1a;stroke-width:0.264583"
+       x="336.01733"
+       y="153.7849"
+       id="text3488"><tspan
+         sodipodi:role="line"
+         id="tspan3486"
+         style="stroke-width:0.264583"
+         x="336.01733"
+         y="153.7849" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible';white-space:pre;inline-size:95.4759;fill:#1a1a1a;stroke-width:0.264583"
+       x="143.50169"
+       y="167.78854"
+       id="text3514"><tspan
+         x="143.50169"
+         y="167.78854"
+         id="tspan3601">*If no file has been selected, </tspan><tspan
+         x="143.50169"
+         y="176.608"
+         id="tspan3603">just put &quot;Choose a .json file&quot; in </tspan><tspan
+         x="143.50169"
+         y="185.42745"
+         id="tspan3605">the bar</tspan></text>
+  </g>
+</svg>

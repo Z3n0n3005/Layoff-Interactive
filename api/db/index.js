@@ -8,6 +8,7 @@ const sequelize = new Sequelize(
     {
         host: config.HOST,
         dialect: config.dialect,
+        port: config.PORT,
         // This is for not showing some errors
         operatorAliases: false,
 
