@@ -74,6 +74,23 @@ const initDb = async () => {
         
     
     }
+
+    let rawdataAdmin = fs.readFileSync('../data/admin.json');
+    input = JSON.parse(rawdataAdmin);
+    // console.log(input);
+
+    await db.adminData.sync({ force: true });
+
+    for(let item of input){
+        // console.log(item);
+      
+        await db.adminData.create({
+                UserName: item["username"],
+                Password: item["password"]
+            })
+        
+    
+    }
 }
 
 initDb();

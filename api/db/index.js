@@ -28,6 +28,7 @@ db.sequelize = sequelize;
 db.data = require('./model/data.model')(sequelize, Sequelize)
 db.companyData = require('./model/companyData.model')(sequelize, Sequelize)
 db.industryData = require('./model/industryData.model')(sequelize, Sequelize)
+db.adminData = require('./model/adminData.model')(sequelize, Sequelize)
 // console.log(db)
 
 
