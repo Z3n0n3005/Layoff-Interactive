@@ -21,15 +21,58 @@ npm start
 netstat -aon | findstr :<port>
 taskkill /PID <PID> /F
 ```
-## To get data
-- Fetch all industry  
-```
-localhost:8080/industryData/getAll
-```
-- Fetch all company
-```
-localhost:8080/companyData/getAll
-```
+## GET APIs
+- Fetch all industry: ```localhost:8080/industryData/getAll```  
+    - Response:  
+    ```
+    [
+        {
+            "id": 1,
+            "Time": "2022/12",
+            "Industry": "Total nonfarm",
+            "NumberOfLayOff": 1475,
+            "createdAt": "2023-05-18T09:29:22.000Z",
+            "updatedAt": "2023-05-18T09:29:22.000Z"
+        },
+        ...
+    ]
+    ```
+- Fetch all company ```localhost:8080/companyData/getAll```  
+    - Response:  
+    ```
+    [
+        {
+            "id": 1,
+            "Time": "2021/3",
+            "Company": "Google",
+            "NumberOfLayOff": 0,
+            "createdAt": "2023-05-18T09:29:20.000Z",
+            "updatedAt": "2023-05-18T09:29:20.000Z"
+        },
+        ...
+    ]
+    ```
+
+## POST APIs
+- Fetch all company ```localhost:8080/adminData/authenticate```  
+    - Request header:  
+    ```
+    'Content-Type': 'application/x-www-form-urlencoded'
+    ```
+    - Response:  
+    ```
+    [
+        {
+            "status": 200,
+            "message": "Login Successful"
+        },
+        {
+            "status": 400,
+            "message": "Login Failed"
+        }
+        ...
+    ]
+    ```
 
 ## Reference links
 - [Map D3 example implementation](https://d3-graph-gallery.com/graph/choropleth_basic.html)  
