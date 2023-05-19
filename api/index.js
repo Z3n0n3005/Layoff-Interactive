@@ -8,7 +8,7 @@ const fs = require('fs');
 
 
 const multer  = require('multer')
-// const upload = multer({ dest: '../data/' })
+// const upload = multer({ dest: '../client/public/data/' })
 const path = require('path')
 
 
@@ -24,7 +24,7 @@ app.use(cors());
 // post method = "/uploadFiles"
 let storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, '../data/')
+      cb(null, '../client/public/data/')
     },
     filename: function (req, file, cb) {
       cb(null, file.fieldname + ".json") //Appending extension
@@ -35,13 +35,13 @@ const upload = multer({ storage: storage });
 
 const filesUpload = () => {
     if (req.files.industry) {
-        fs.rename("../data/industry.json", "../data/industry_" + Date.now() + ".json", function(err) {
+        fs.rename("../client/public/data/industry.json", "../client/public/data/industry_" + Date.now() + ".json", function(err) {
             if ( err ) console.log('ERROR: ' + err);
         });
     }
 
     if (req.files.company) {
-        fs.rename("../data/company.json", "../data/company_" + Date.now() + ".json", function(err) {
+        fs.rename("../client/public/data/company.json", "../client/public/data/company_" + Date.now() + ".json", function(err) {
             if ( err ) console.log('ERROR: ' + err);
         });
     }
@@ -82,7 +82,7 @@ const initDb = async () => {
         })
     }
 
-    let rawdataCompany = fs.readFileSync('../data/company.json');
+    let rawdataCompany = fs.readFileSync('../client/public/data/company.json');
     let input = JSON.parse(rawdataCompany);
     // console.log(input);
 
@@ -100,7 +100,7 @@ const initDb = async () => {
     
     }
 
-    let rawdataIndustry = fs.readFileSync('../data/industry.json');
+    let rawdataIndustry = fs.readFileSync('../client/public/data/industry.json');
     input = JSON.parse(rawdataIndustry);
     // console.log(input);
 
@@ -118,7 +118,7 @@ const initDb = async () => {
     
     }
 
-    let rawdataAdmin = fs.readFileSync('../data/admin.json');
+    let rawdataAdmin = fs.readFileSync('../client/public/data/admin.json');
     input = JSON.parse(rawdataAdmin);
     // console.log(input);
 
