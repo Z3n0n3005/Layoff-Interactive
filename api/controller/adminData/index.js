@@ -1,4 +1,4 @@
-const { adminData } = require('../../db');
+const { adminData, companyData} = require('../../db');
 
 const authenticate = async (req, res) => {
     const { UserName, Password } = req.body;
@@ -18,5 +18,9 @@ const authenticate = async (req, res) => {
 const test = async (req, res) => {
     return res.json({ status: 200, message: 'Login Successful' })
 }
+const getAll = async (req, res) => {
+    const allData = await adminData.findAll();
+    return res.json(allData)
+}
 
-module.exports = { authenticate, test }
+module.exports = { authenticate, test, getAll }
