@@ -6,8 +6,8 @@ const StackedGraph = ({ datasets, keys, colors }) => {
     const ref = useRef();
     const timeline = ["2021/3","2021/6","2021/9","2021/12","2022/3","2022/6","2022/9","2022/12"]
     const margin = {top: 30, right: 40, bottom: 120, left: 60},
-        width = 800 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom
+        width = 700 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom
 
     const init = () => {
         if(datasets != "" && datasets != undefined) {

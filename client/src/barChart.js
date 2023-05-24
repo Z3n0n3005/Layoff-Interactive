@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
+import "./pages/styles.css";
+import {useNavigate} from "react-router-dom";
+
 const BarChart = () => {
+    const navigate = useNavigate();
     const ref = useRef();
     const [database, setDatabase] = useState();
-    const [time, setTime] = useState(0)
+    const [time, setTime] = useState(1)
 
 
     const [svg, setSvg] = useState()
@@ -15,8 +19,9 @@ const BarChart = () => {
     const [label, setLabel] = useState()
 
     const margin = {top: 30, right: 40, bottom: 120, left: 60},
-        width = 800 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom
+        width = 700 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom
+    const timeline = ["2020/12","2021/3","2021/6","2021/9","2021/12","2022/3","2022/6","2022/9","2022/12","2023/3"]
     const init = () => {
         let u = d3.select(ref.current)
             .attr("width", width + margin.left + margin.right)
@@ -87,6 +92,10 @@ const BarChart = () => {
             if(svg != undefined) draw()        }
         , [svg, time])
     const draw = () => {
+        d3.selectAll(".click")
+            .on("click", function(){
+                navigate("/page-2")
+            })
         let data = []
         data = database.filter(d => d["Time"] == timeline[time])
         data.shift()
@@ -113,6 +122,11 @@ const BarChart = () => {
             .attr("y", d => y(d["NumberOfLayOff"]))
             .attr("width", x.bandwidth())
             .attr("height", d => height - y(d["NumberOfLayOff"]))
+            .attr("class", d => {
+                if(d.Industry == "Information")
+                    return "click"
+                return ""
+        })
             .attr("fill", function(d) {
                 if(d.Industry == "Information")
                     return "#be3455"
@@ -139,8 +153,8 @@ const BarChart = () => {
     }
     return (
         <div>
-            <button onClick={() => setTime(Math.max(0,time-1))}>-</button>
-            <button onClick={() => setTime(Math.min(7,time+1))}>+</button>
+            <button className="leftButton smallButton" onClick={() => setTime(Math.max(1,time-1))}>-</button>
+            <button className="rightButton smallButton" onClick={() => setTime(Math.min(8,time+1))}>+</button>
             <svg
                 ref={ref}
             />

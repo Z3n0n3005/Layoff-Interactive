@@ -49,9 +49,9 @@ const StackedBarChart = () => {
     return (
         <div>
             <StackedGraph datasets={database} colors={colors} keys={keys} />
-            <div className="fields" style={{ display: "flex" }}>
+            <div className="fields" style={{ display: "flex", "flex-wrap": "wrap"}}>
                 {allKeys.map((key) => (
-                    <div key={key} className="field" style={{ display: "flex" }}>
+                    <div key={key} className="field" style={{ display: "flex"}}>
                         <input
                             id={key}
                             type="checkbox"

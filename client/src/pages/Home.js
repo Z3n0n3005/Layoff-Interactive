@@ -9,7 +9,7 @@ const Home = () => {
                 <h1><center>Thank you for your interest</center></h1>
                 <p><i><center>Please read the information below.</center></i></p>
                 <p><center>Once you have read and understood the information, if you interest in the
-                    research, click on the "<strong>I interested</strong>" button to begin the research</center></p>
+                    research, click on the "<strong>I'm interested</strong>" button to begin the research</center></p>
                 <div className="Text">
                     <h3>Why are we asking you to take part?</h3>
                     <p>We have invited you to read this research because you may interest in the economic trends in US. We want to hear
@@ -41,7 +41,7 @@ const Home = () => {
                 <div className="outerButton">
                     <div className="innerButton">
                         <button className="leftButton" onClick={closeTab}>Cancel</button>
-                        <button className="rightButton" onClick={() => navigate("/survey")}>I have read and agree with the terms of use</button>
+                        <button className="rightButton" onClick={() => navigate("/page-1")}>I have read and I'm interested with this</button>
                     </div>
                 </div>
             </div>

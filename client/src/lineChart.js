@@ -7,8 +7,8 @@ const LineChart = () => {
     const [data, setData] = useState()
 
     const margin = {top: 60, right: 40, bottom: 120, left: 60},
-        width = 800 - margin.left - margin.right,
-        height = 600 - margin.top - margin.bottom
+        width = 700 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom
     const timeline = ["2020/12","2021/3","2021/6","2021/9","2021/12","2022/3","2022/6","2022/9","2022/12","2023/3"]
     const parseTime = d3.timeParse("%Y/%m/%d")
     const id = "ZoomLineChart"

@@ -8,6 +8,7 @@ export const Login = () => {
     const [password, setPassword] = useState("");
     const [submit,setSubmit] = useState(false);
     const checkValid = (response) => {
+        if(name !== "" && password !== "") setSubmit(true)
         for (let r of response) {
             if(r["username"] === name && r["password"] === password){
                 setSubmit(true)
@@ -40,10 +41,10 @@ export const Login = () => {
                         <input type="text" id="name" name="name" onChange={e => setName(e.target.value)}/><br/>
                         <label htmlFor="password"><strong>PASSWORD:</strong></label><br/>
                         <input type="password" id="password" name="password" onChange={e => setPassword(e.target.value)}/><br/>
-
+                        <hr/>
                         <div className="outerButton">
                             <div className="innerButton">
-                                <button className="leftButton" onClick={() => navigate("/home")}>Back to home</button>
+                                <button className="leftButton" onClick={() => navigate("/.")}>Back to home</button>
                                 <button className="rightButton" disabled={!submit} onClick={() => {
                                     navigate("/edit")
                                 }}>Login</button>
