@@ -1,9 +1,12 @@
 import {useNavigate} from "react-router-dom";
 import "./styles.css";
 import {useEffect, useState} from "react";
+import {useCookies} from "react-cookie";
 
 export const Login = () => {
     const navigate = useNavigate();
+    const [cookie, setCookie, removeCookie] = useCookies()
+
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [submit,setSubmit] = useState(false);
@@ -27,14 +30,13 @@ export const Login = () => {
                 throw res
             })
             .then(res => {
-                console.log(res)
                 setAdmin(res)
             })
             .catch(err => console.log(err))
 
     }, [])
     useEffect(() => {
-        if(name !== "")
+        if(name !== "" && password !== "")
             checkValid()
     }, [name, password, admin])
     return (
@@ -56,6 +58,7 @@ export const Login = () => {
                             <div className="innerButton">
                                 <button className="leftButton" onClick={() => navigate("/.")}>Back to home</button>
                                 <button className="rightButton" disabled={!submit} onClick={() => {
+                                    setCookie("admin",[name, password, "login"])
                                     navigate("/admin")
                                 }}>Login</button>
                             </div>

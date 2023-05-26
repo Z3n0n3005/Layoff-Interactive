@@ -17,7 +17,7 @@ export const Vis = () => {
         
             <NavBar/>
             <Routes>
-                <Route  path='/*' element={<Error/>}/>
+                <Route path='/*' element={<Error/>}/>
                 <Route exact path='/' element={<Home/>}/>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/page-1" element={<Page1/>}></Route>

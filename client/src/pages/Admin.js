@@ -10,9 +10,22 @@ import AddCompany from "./components/AddCompany";
 import Company from "./components/Company";
 import CompanyList from "./components/CompanyList";
 import Feedback from "./components/FeedbackList";
+import {useCookies} from "react-cookie";
+import {Error} from "./layout/error";
+import NavBar from "./layout/NavBar";
 
 export const Admin = () => {
-  return (
+    const [cookie, setCookie, removeCookie] = useCookies()
+
+    if(!Object.keys(cookie).includes("admin"))
+        return (
+            <>
+                <NavBar/>
+                <Error/>
+            </>
+        )
+    else
+    return (
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <a className="navbar-brand">
@@ -45,7 +58,10 @@ export const Admin = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to={"/"} className="nav-link">
+            <Link to={"/"} className="nav-link" onClick={() => {
+                    removeCookie("admin",{ expires: 0 })
+                }
+            }>
               Logout
             </Link>
           </li>
