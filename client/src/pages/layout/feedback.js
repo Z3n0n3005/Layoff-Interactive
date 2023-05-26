@@ -18,26 +18,31 @@ export const Feedback = () => {
       };
     
       const saveFeedback = () => {
-        var data = {
-          Name: feedback.Name,
-          Email: feedback.Email,
-          Content: feedback.Content
-        };
-    
-        FeedbackDataService.create(data)
-          .then(response => {
-            setFeedback({
-              id: response.data.id,
-              Name: response.data.Name,
-              Email: response.data.Email,
-              Content: response.data.Content
+        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(feedback.Email)) {
+          alert("You have entered an invalid email address!");
+        } else {
+          var data = {
+            Name: feedback.Name,
+            Email: feedback.Email,
+            Content: feedback.Content
+          };
+      
+          FeedbackDataService.create(data)
+            .then(response => {
+              setFeedback({
+                id: response.data.id,
+                Name: response.data.Name,
+                Email: response.data.Email,
+                Content: response.data.Content
+              });
+              console.log(response.data);
+            })
+            .catch(e => {
+              console.log(e);
             });
-            console.log(response.data);
-          })
-          .catch(e => {
-            console.log(e);
-          });
-        navigate("/end");
+          navigate("/end");
+
+        }
       };
 
     const navigate = useNavigate();
