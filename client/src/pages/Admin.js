@@ -46,7 +46,7 @@ export const Admin = () => {
           </li>
           <li className="nav-item">
             <Link to={"/"} className="nav-link">
-              Visualize Data
+              Logout
             </Link>
           </li>
         </div>

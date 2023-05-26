@@ -52,7 +52,7 @@ button{
     scale: 1.1;
     cursor: pointer;
 }
-#name, #email{
+#name, #email, #password{
     width: 100%;
     margin: 5px;
     height: 30px;

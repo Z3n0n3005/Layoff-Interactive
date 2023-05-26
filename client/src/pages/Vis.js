@@ -7,6 +7,7 @@ import {Page2} from "./layout/Page2";
 import {Page3} from "./layout/Page3";
 import {Feedback} from "./layout/feedback";
 import {End} from "./layout/theEnd";
+import {Error} from "./layout/error";
 
 
 export const Vis = () => {
@@ -16,6 +17,7 @@ export const Vis = () => {
         
             <NavBar/>
             <Routes>
+                <Route  path='/*' element={<Error/>}/>
                 <Route exact path='/' element={<Home/>}/>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/page-1" element={<Page1/>}></Route>

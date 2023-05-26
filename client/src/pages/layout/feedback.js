@@ -47,7 +47,7 @@ export const Feedback = () => {
             <div className="Page">
                 <div className="HomePage">
                     <center>
-                        <h1>Thank you for taking the time to see our research. Your feedback is very much appreciated.</h1>
+                        <h2>Thank you for taking the time to see our research. Your feedback is very much appreciated.</h2>
                         <p>If you have any questions or concerns, please email us:</p>
                         <ul>
                             <li><strong>Research Group</strong> (research@gmail.com)</li>
@@ -59,8 +59,8 @@ export const Feedback = () => {
                         <input type="text" id="name" name="Name" onChange={handleInputChange}/><br/>
                         <label htmlFor="email"><strong>EMAIL:</strong></label><br/>
                         <input type="email" id="email" name="Email" onChange={handleInputChange}/><br/>
-                        <label htmlFor="fb"><strong>YOUR FEEDBACK:</strong></label>
-                        <textarea className="textArea" name="Content" rows="4" cols="50" maxLength="2000" onChange={handleInputChange}/>
+                        <label htmlFor="Content"><strong>YOUR FEEDBACK:</strong></label>
+                        <textarea id="Content" name="Content" rows="4" cols="55" maxLength="2000" onChange={handleInputChange}/>
                         <i><strong>Please note: </strong> your name should not include number and your email should be valid</i>
                         <div className="outerButton">
                             <div className="innerButton">

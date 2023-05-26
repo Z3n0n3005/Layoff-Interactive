@@ -7,10 +7,11 @@ export const Login = () => {
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [submit,setSubmit] = useState(false);
-    const checkValid = (response) => {
-        if(name !== "" && password !== "") setSubmit(true)
-        for (let r of response) {
-            if(r["username"] === name && r["password"] === password){
+    const [admin, setAdmin] = useState()
+    const checkValid = () => {
+        for (let i = 0; i < admin.length; i++) {
+            var d = admin[i]
+            if(d["Username"] === name && d["Password"] === password){
                 setSubmit(true)
                 return
             }
@@ -19,14 +20,23 @@ export const Login = () => {
     };
     useEffect(() => {
         fetch("http://localhost:8080/api/adminData/")
-            .then(r => {
-                r.json()
+            .then(res => {
+                if(res.ok) {
+                    return res.json()
+                }
+                throw res
             })
-            .then(r => {
-                checkValid(r)
+            .then(res => {
+                console.log(res)
+                setAdmin(res)
             })
+            .catch(err => console.log(err))
 
-    }, [name, password])
+    }, [])
+    useEffect(() => {
+        if(name !== "")
+            checkValid()
+    }, [name, password, admin])
     return (
         <>
             <div className="Page">
