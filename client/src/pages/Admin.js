@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
+import {useCookies} from "react-cookie";
 
 import AddIndustry from "./components/AddIndustry";
 import Industry from "./components/Industry";
@@ -10,7 +11,6 @@ import AddCompany from "./components/AddCompany";
 import Company from "./components/Company";
 import CompanyList from "./components/CompanyList";
 import Feedback from "./components/FeedbackList";
-import {useCookies} from "react-cookie";
 import {Error} from "./layout/error";
 import NavBar from "./layout/NavBar";
 
