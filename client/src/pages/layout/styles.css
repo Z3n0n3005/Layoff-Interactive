@@ -52,12 +52,15 @@ button{
     scale: 1.1;
     cursor: pointer;
 }
-#name, #email, #password{
+#name, #email, #password, #Content{
     width: 100%;
     margin: 5px;
-    height: 30px;
     border-radius: 5px;
     border: 1px solid #BFBFBF;
+
+}
+#name, #email, #password{
+    height: 30px;
 
 }
 button:disabled {

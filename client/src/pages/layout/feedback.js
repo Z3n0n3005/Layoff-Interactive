@@ -18,8 +18,14 @@ export const Feedback = () => {
       };
     
       const saveFeedback = () => {
-        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(feedback.Email)) {
-          alert("You have entered an invalid email address!");
+        if (feedback.Name == "") {
+            alert("Please enter your name");
+        } else if (feedback.Email == "") {
+            alert("Please enter your email");
+        } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(feedback.Email)) {
+            alert("You have entered an invalid email address!");
+        } else if (feedback.Content == "") {
+            alert("Please enter your feedback");
         } else {
           var data = {
             Name: feedback.Name,
@@ -54,9 +60,7 @@ export const Feedback = () => {
                     <center>
                         <h2>Thank you for taking the time to see our research. Your feedback is very much appreciated.</h2>
                         <p>If you have any questions or concerns, please email us:</p>
-                        <ul>
-                            <li><strong>Research Group</strong> (research@gmail.com)</li>
-                        </ul>
+                        <strong>Research Group</strong> (research@gmail.com)
                         <hr/>
                     </center>
                     <div>
