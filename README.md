@@ -7,7 +7,7 @@ cd client
 npm install
 cd ../api
 npm install
-docker compose up
+npm run setup-example-db
 
 //new terminal
 cd ./api
