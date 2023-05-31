@@ -42,13 +42,13 @@ async function reset() {
 
 	await sequelize.models.feedbackData.bulkCreate([
 		{ Name: 'jack-sparrow',
-		  Email: 'a@123',
+		  Email: 'a@gmail.com',
 		  Content: 'I am Jack Sparrow' },
 		{ Name: 'white-beard',
-		  Email: 'b@123',
+		  Email: 'b@gmail.com',
 		  Content: 'I am White Beard' },
 		{ Name: 'black-beard',
-		  Email: 'c@123',
+		  Email: 'c@gmail.com',
 		  Content: 'I am Black Beard' },
 	]);
 
