@@ -22,7 +22,7 @@ netstat -aon | findstr :<port>
 taskkill /PID <PID> /F
 ```
 ## GET APIs
-- Fetch all industry: ```localhost:8080/industryData/getAll```  
+- Fetch all industry: ```localhost:8080/api/industryData/```  
     - Response:  
     ```
     [
@@ -37,7 +37,7 @@ taskkill /PID <PID> /F
         ...
     ]
     ```
-- Fetch all company ```localhost:8080/companyData/getAll```  
+- Fetch all company ```localhost:8080/api/companyData/```  
     - Response:  
     ```
     [
@@ -54,7 +54,7 @@ taskkill /PID <PID> /F
     ```
 
 ## POST APIs
-- Fetch all company ```localhost:8080/adminData/authenticate```  
+- Fetch all admin ```localhost:8080/api/adminData/```  
     - Request header:  
     ```
     'Content-Type': 'application/x-www-form-urlencoded'
